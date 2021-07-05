@@ -1,0 +1,78 @@
+.wrapper-modal {
+  width: 590px;
+  height: 362px;
+  background: #f8f8f8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  outline-width: 0px;
+  padding: 20px;
+  max-width: 90%;
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #29292e;
+    font-weight: bold;
+    margin: 24px 0px 12px 0px;
+    font-size: 1.5em;
+  }
+
+  p {
+    color: #737380;
+    font-size: 1em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    @media (max-width: 576px) {
+      button {
+        font-size: 12px !important;
+      }
+    }
+
+    .btn-cancel {
+      padding: 15.5px 34px;
+      color: #737380;
+      background: #dbdcdd;
+      font-weight: 500;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .btn-confirm {
+      padding: 15.5px 34px;
+      color: #fefefe;
+      background: #e73f5d;
+      font-weight: 500;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+  }
+}
+
+.wrapper-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #05020696;
+
+  z-index: 20;
+}
